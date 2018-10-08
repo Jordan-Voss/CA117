@@ -1,0 +1,2 @@
+import sys
+print("\n".join([str(g)for g in list(map((lambda h:max([(lambda e,f,g:e**2+f**2+g**2+7*min(e,f,g))(h[0]+t[0],h[1]+t[1],h[2]+t[2])for t in __import__("itertools").product(*[list(range(h[3]+1))]*3)if sum(t)==h[3]])),[list(map(int,l.split()))for l in __import__("sys").stdin]))]))
